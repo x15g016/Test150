@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="jp.ac.x15g016chiba_fjb.e02.MainActivity">
+
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/framecolor"
+                android:layout_width="wrap_content"
+                android:layout_height="62dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="色" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="1142dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/seekBarR"
+                    android:layout_width="355dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_red_dark"
+                    android:max="255" />
+
+                <SeekBar
+                    android:id="@+id/seekBarG"
+                    android:layout_width="355dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:elevation="1dp"
+                    android:max="255" />
+
+                <SeekBar
+                    android:id="@+id/seekBarB"
+                    android:layout_width="354dp"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:max="255" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
